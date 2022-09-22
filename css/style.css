@@ -1,0 +1,77 @@
+html {
+	font-size: 62.5%;
+}
+img {
+	width: 100%;
+	height: auto;
+  align-items: center;
+}
+body {
+  color: #01071b; 
+  font-size: 1.6rem;
+  font-family: 'Gentium Book Basic', serif;
+}
+p {
+  margin-bottom: .67em;
+}
+nav, footer {
+  background-color: #050507; 
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0 .3em 0;
+  color: #d8d9d3; 
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly ; 
+  list-style: none;
+  margin: 0 auto; 
+  padding: 1em;
+}
+
+
+
+nav a:link, nav a:visited {
+  color: #AAACA1; 
+  text-decoration: none;
+}
+nav a:hover, nav a:active  {
+  color: #d8d9d3;
+  text-decoration: underline;
+}
+nav a.active {
+  color: #d8d9d3; 
+}
+
+header {
+  width: 510px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header h1 {
+  margin: 0 auto;
+  padding: 0 auto;
+  font-weight: lighter; 
+  text-align: center;
+  color: #362E2D; 
+}
+
+/*
+a.button {
+}
+a.button:hover, a.button:active {
+} */
+/*-- changes header and article width on small screens --*/
+@media screen and (max-width: 768px) {
+  header {width: 96%;}
+  article {width: 96%;}
+}
+
