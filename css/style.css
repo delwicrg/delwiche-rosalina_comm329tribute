@@ -297,6 +297,22 @@ footer {
   padding: 1rem;  
 }
 
+
+.container {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: black;
+}
+
+
 /*-- Media Queries --*/
 @media screen and (min-width: 550px) {
   body {width: 98vw;}
