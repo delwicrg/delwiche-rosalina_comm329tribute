@@ -132,6 +132,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: .25em;
 }
 
 .btn {
@@ -186,12 +187,14 @@ footer {
   box-shadow: 0px -25px 40px 10px white; /* x, y, blur, size */
   border-radius: 0em .5em .5em 0em;
 
-  padding: 1rem;
   align-items: left;
 }
 
+
+
 .headline i, .headline h1{
   display: inline-flex;
+  
 
 }
 
@@ -201,8 +204,14 @@ footer {
 
 .headline{
   padding: 1rem;
+  justify-content: left;
+}
 
-
+.recipe-headline{
+  display: inline-flex;
+  line-height: normal;
+  vertical-align: middle;
+  
 }
 
 
@@ -226,6 +235,9 @@ footer {
   background: linear-gradient(0deg, rgba(121,94,27,1) 0%, rgba(234,186,67,1) 30%);
   border-radius: .5em;
   text-align: justify;
+  padding: 1em;  
+  height: 100%;
+
 
 
 
@@ -246,16 +258,28 @@ align-items: center; }
   flex-direction: column;
   border: dashed 4px #073063;
   border-radius: .5em;
+  padding: 4rem 2rem;
+}
 
+
+
+.general-info{
+  justify-content: space-evenly;
 }
 
 li{
-  list-style: none;
+  list-style-type: none;
+  list-style-position: inside;
+  text-indent: -2em;
+  padding-left: -2em;
 }
 
+
+
+
 button{
-  border-radius: .25em;
-  background-color:#740e09;
+  border-radius: 1rem;
+  background-color:#921811;
   outline: none;
   color: white;
   padding: .5em;
@@ -267,14 +291,41 @@ button{
 
 button:hover{
   box-shadow: none;
-  background-color:#740e0970;
+  background-color:#740e09;
 
   transition-delay: .1s;
-  border:#073063;
-  color:black;
 
 }
 
+section.odd {
+  grid-template-columns: 1fr;
+}
+section.even {
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+
+
+.outer {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.glass-inner {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*-- frosted glass effect
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 16px 0 rgba(167, 167, 167, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);--*/
+}
 
 
 .outer {
@@ -292,12 +343,17 @@ button:hover{
   height: auto;
 }
 
-.test body{
+
+section {
   display: grid;
-  align-items: center;
-  grid-template-columns: 300px 1fr;
-
-
+  grid-gap: 3.2rem;
+  margin: 3rem auto;
+}
+section.odd {
+  grid-template-columns: 1fr;
+}
+section.even {
+  grid-template-columns: 1fr;
 }
 
 section.odd {
@@ -328,5 +384,7 @@ section.odd {
   section.odd {grid-template-columns: 8fr 4fr;}
   section.even {grid-template-columns: 4fr 8fr;}
 }
+
+
 
 
