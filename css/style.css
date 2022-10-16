@@ -1,138 +1,6 @@
-/* html {
-	font-size: 62.5%;
-}
-img {
-	width: 100%;
-	height: auto;
-  align-items: center;
-}
-body {
-  color: blanchedalmond;
-  font-size: 2rem;
-  width: 98vw;
-  margin: auto;
-  line-height: 1.3;
-  font-weight: 500;
-  font-family: var(--font);
-  padding: 2rem 0;
-}
-nav, footer {
-  background-color: #073063; 
-}
-
-
-
-.main-nav {
-  border-top-width: 1em;
-  border-top-left-radius: .75em;
-  border-top-right-radius: .75em;
-  border-top-color: #CF352D;
-  border-style: solid;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 0;
-
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-}
-
-
-
-.bottom-footer {
-  border-bottom-width: 1em;
-  border-bottom-left-radius: .75em;
-  border-bottom-right-radius: .75em;
-  border-bottom-color: rgb(32, 30, 30);
-  border-style: solid;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-
-  padding: 1rem;  
-}
-
-footer {
-  text-align: center;
-  padding: 1em 0 .3em 0;
-  color: #d8d9d3; 
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly ; 
-  list-style: none;
-  margin: 0 auto; 
-  padding: 1em;
-}
-
-.links {
-  padding-top: 1.2rem;
-  text-align: center;
-
-}
-.links a {
-  margin-left: 1.5rem;
-  transition: var(--reg);
-}
-
-
-.logo{
-  padding-top: 1.2rem;
-  text-align: center;
-  font-size: 150%;
-  text-align: center;
-}
-
-.main-nav, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Arial';
-  letter-spacing: 1px;
-}
-
-
-
-nav a:link, nav a:visited {
-  color: white; 
-  text-decoration: none;
-  
-}
-nav a:hover, nav a:active  {
-  color: #F1C38D;
-  text-decoration: none;
-}
-nav a.active {
-  color: #F1C38D; 
-  text-decoration: underline;
-
-}
-
-
-.nav ul {
-  list-style: none;
-  text-align: center;
-}
-
-.nav ul li {
-  display: inline-block;
-}
-
-
-
-.logo {
-  align-items: center;
-  padding: 0;
-}
-
-*/
-
 /*-- Defaults --*/
 html, body, main, section, header, div, article, aside, figure, figcaption, image, iframe, h1, h2, h3, h4, h5, h6, p, table, blockquote {
   margin: 0;
-  padding: 0;
 }
 /*-- primary variables --*/
 :root {
@@ -181,6 +49,10 @@ body {
   background:#EEEBEC;
 }
 
+.general-info{
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
 .old-bay-name{
   color:white;
 }
@@ -311,20 +183,28 @@ footer {
   left: 0px;
   background-color: black;
   width: 75%;
-  display: inline;
   box-shadow: 0px -25px 40px 10px white; /* x, y, blur, size */
-  border-radius: 0em .5em .5em 0em;;
+  border-radius: 0em .5em .5em 0em;
+
+  padding: 1rem;
+  align-items: left;
 }
 
-.bottom-left i{
+.headline i, .headline h1{
   display: inline-flex;
+
 }
 
-.bottom-left h1{
-  margin-left: 2rem;
-  margin-right: 2rem;
-  display: inline-flex;
+.headline i{
+  justify-items: center;
 }
+
+.headline{
+  padding: 1rem;
+
+
+}
+
 
 .trifecta{
   width: 100%;
@@ -345,24 +225,79 @@ footer {
   background: rgb(121,94,27);
   background: linear-gradient(0deg, rgba(121,94,27,1) 0%, rgba(234,186,67,1) 30%);
   border-radius: .5em;
+  text-align: justify;
+
 
 
 }
 
-.history-inner{ max-width: 100%;
+.inner{ max-width: 100%;
 padding: 4rem 2rem;
 display: flex;
 flex-direction: column;
 align-items: center; }
 
-.img {
+
+
+
+.recipe-card{
+  order: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  border: dashed 4px #073063;
+  border-radius: .5em;
+
 }
 
+li{
+  list-style: none;
+}
+
+button{
+  border-radius: .25em;
+  background-color:#740e09;
+  outline: none;
+  color: white;
+  padding: .5em;
+  border: none;
+  opacity: 1;
+  box-shadow:0 1px 2px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.07),0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07)
+}
+
+
+button:hover{
+  box-shadow: none;
+  background-color:#740e0970;
+
+  transition-delay: .1s;
+  border:#073063;
+  color:black;
+
+}
+
+
+
+.outer {
+  order: 1;
+  display: flex;
+  padding:1rem;
+}
+.history{
+  float: right;
+}
 .history-img{
   border-radius: .5em;
+  float: left;
+  max-width: 100%;
+  height: auto;
+}
+
+.test body{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 300px 1fr;
+
+
 }
 
 section.odd {
@@ -382,7 +317,7 @@ section.odd {
   .main-nav {flex-direction: row; justify-content: space-between;}
   section.odd {grid-template-columns: 1fr 1fr;}
   section.even {grid-template-columns: 1fr 1fr;}
-  .glass-outer {order: inherit;}
+  .outer {order: inherit;}
 }
 @media screen and (min-width: 1280px) {
   body {width: 80vw;}
