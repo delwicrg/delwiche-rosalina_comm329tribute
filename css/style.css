@@ -161,6 +161,7 @@ footer {
   border-top: 0;
 
   padding: 1rem;  
+  
 }
 
 
@@ -176,11 +177,11 @@ footer {
   bottom: 0px;
   left: 0px;
   background-color: black;
-  width: 75%;
   box-shadow: 5px -20px 40px 5px white; /* x, y, blur, size */
   border-radius: 0em .5em .5em 0em;
 
   align-items: left;
+  display: inline-block;
 }
 
 
@@ -198,6 +199,8 @@ footer {
   justify-content: left;
 }
 
+/* align items center */
+/* display: flex */
 
 
 
@@ -268,10 +271,15 @@ li{
   margin-top: 3rem;
   margin-bottom: 0rem;
   
-
 }
 
-
+.another{
+  display: flex;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  vertical-align: center;
+  align-items: center;
+}
 
 
 
@@ -284,6 +292,7 @@ button{
   padding: .5em;
   border: none;
   opacity: 1;
+  margin-left: 1rem;
   box-shadow:0 1px 2px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.07),0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07)
 }
 
@@ -330,7 +339,27 @@ section.even {
   float: left;
   max-width: 100%;
   height: auto;
+  
+
 }
+
+/* resource for flash: https://codepen.io/nxworld/pen/ZYNOBZ */
+.history-img:hover{
+  opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+  
+}
+
+@-webkit-keyframes flash {
+	0% {opacity: .6;}
+	100% {	opacity: 1;}
+}
+@keyframes flash {
+	0% {opacity: .6;}
+	100% {	opacity: 1;}
+}
+
 
 #boxx{
   padding: 20px 20px 20px 20px;
