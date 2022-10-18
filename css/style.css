@@ -11,6 +11,13 @@ html, body, main, section, header, div, article, aside, figure, figcaption, imag
   font-size: 62.5%;
 }
 
+/*
+@font-face {
+  font-family: ;
+  src: url();
+}
+*/
+
 figcaption{
   font-weight:330;
   margin-top: .5em;
