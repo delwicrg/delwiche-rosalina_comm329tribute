@@ -1,0 +1,6 @@
+Left to do 
+    Add alts to images
+    Do something about loading in font for old bay
+    cleanup code
+    Add color treatment to recipe card
+    Change h1 and h2?
