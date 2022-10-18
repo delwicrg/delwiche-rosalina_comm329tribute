@@ -280,6 +280,35 @@ button:hover{
 
 }
 
+
+
+
+/* zoom-in adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_zoom_hover */
+.zoom-in {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom-in:hover {
+  -ms-transform: scale(1.23); /* IE 9 */
+  -webkit-transform: scale(1.23); /* Safari 3-8 */
+  transform: scale(1.23); 
+}
+
+.icon{
+  max-height: 4rem;
+  max-width: 4rem;
+  display: flex;
+  margin-right: .75rem;
+
+}
+
+.h2wicon{
+  display:flex;
+  align-content: center;
+}
+
+
 section.odd {
   grid-template-columns: 1fr;
 }
